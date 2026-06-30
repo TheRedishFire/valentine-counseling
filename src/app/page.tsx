@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Menu, MapPin, Phone, Mail, CheckCircle2 } from "lucide-react";
+import { Menu, MapPin, Phone, Mail, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -163,18 +163,23 @@ export default function HomePage() {
               </div>
               
               <p className="font-bold text-sm mb-3 text-gray-900">Accepted Insurance Plans:</p>
-              <ul className="text-sm text-gray-600 space-y-1.5 list-disc pl-4">
+              <ul className="text-sm text-gray-600 space-y-1.5 list-disc pl-4 mb-5">
                 <li>Aetna</li>
                 <li>BlueCross and BlueShield</li>
                 <li>ComPsych</li>
                 <li>First Health</li>
                 <li>GEHA</li>
                 <li>Humana</li>
-                <li>MHNet Behavioral Health</li>
-                <li>Optum</li>
-                <li>SelectHealth</li>
-                <li>UMR</li>
               </ul>
+              
+              {/* THE NEW LINK */}
+              <Link 
+                href="/insurance" 
+                className="inline-flex items-center gap-2 text-[#ad8330] font-bold text-[0.9rem] hover:text-[#8e6b27] transition-colors group"
+              >
+                View All Accepted Insurance 
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </div>
 
             {/* Qualifications Card */}
