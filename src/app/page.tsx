@@ -61,7 +61,7 @@ export default function HomePage() {
 
         {/* HERO CONTENT */}
         <div className="relative z-10 text-center text-white px-4 mt-12 max-w-4xl mx-auto">
-          <h1 className="font-serif text-[3.5rem] leading-[1.1] mb-6 font-medium">
+          <h1 className="font-serif text-[3.5rem] leading-[1.1] mb-6 font-medium text-white drop-shadow-2xl">
             Clinical Social Work & Therapy <br />
             in Washington County
           </h1>
@@ -170,6 +170,10 @@ export default function HomePage() {
                 <li>First Health</li>
                 <li>GEHA</li>
                 <li>Humana</li>
+                <li>MHNet Behavioral Health</li>
+                <li>Optum</li>
+                <li>SelectHealth</li>
+                <li>United Medical Resources (UMR)</li>
               </ul>
               
               {/* THE NEW LINK */}
