@@ -3,9 +3,10 @@ import { MapPin, Phone, Mail, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function HomePage() {
   return (
-    <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21]">
-      <div className="bg-[#241f21] text-white text-[13px] py-3 px-6 flex justify-center items-center gap-8 flex-wrap tracking-wider relative z-50">
+  <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21]">
+      <div className="bg-[#241f21] text-white text-[13px] py-3 px-6 flex justify-center items-center gap-8 flex-wrap tracking-wider sticky top-0 z-50 shadow-md">
         <span>Free 15-minute consultation available.</span>
+    
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-2">
             <Phone className="w-3.5 h-3.5 text-[#ad8330]" />
@@ -16,7 +17,6 @@ export default function HomePage() {
             <a href="mailto:jillevalentine@gmail.com" className="hover:text-[#ad8330] transition-colors font-bold">jillevalentine@gmail.com</a>
           </span>
         </div>
-
 
         <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
           <Link href="/about" className="hover:text-[#ad8330] transition-colors">
@@ -29,8 +29,6 @@ export default function HomePage() {
       </div>
 
       <section className="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center">
-        
-
         <div 
           className="absolute inset-0 z-0"
           style={{ 
@@ -41,7 +39,6 @@ export default function HomePage() {
         >
           <div className="absolute inset-0 bg-black/45"></div>
         </div>
-
 
         <header className="absolute top-0 left-0 w-full z-40 px-8 py-6 flex items-center justify-between text-white">
           
@@ -60,7 +57,6 @@ export default function HomePage() {
             Request an Appointment
           </Link>
         </header>
-
 
         <div className="relative z-10 text-center text-white px-4 mt-12 max-w-4xl mx-auto">
           <h1 className="font-serif text-[3.5rem] leading-[1.1] mb-6 font-medium text-white drop-shadow-2xl">
@@ -84,10 +80,7 @@ export default function HomePage() {
       </section>
 
       <main className="max-w-[1200px] mx-auto px-6 py-20">
-        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-          
-          {/* Left Column: Bio */}
           <div className="lg:col-span-2">
             <div className="flex flex-col md:flex-row gap-8 mb-12">
               <div className="w-full md:w-2/5 shrink-0">
@@ -136,11 +129,7 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-
-
           <div className="space-y-8">
-            
-            {/* Location Card */}
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Practice at a Glance</h3>
               <div className="space-y-4 text-sm">
@@ -161,8 +150,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
-
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Finances & Insurance</h3>
               <div className="mb-6">
@@ -193,9 +180,6 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
-
-
-            
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-4 font-serif border-b border-[#e5e0d8] pb-4 text-[#241f21]">Client Focus</h3>
               <ul className="text-sm space-y-2 text-gray-700">
@@ -206,11 +190,9 @@ export default function HomePage() {
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </main>
-
     </div>
   );
 }

@@ -4,8 +4,6 @@ import { MapPin, Phone, Mail, CheckCircle2, ArrowRight, ArrowLeft } from "lucide
 export default function AboutPage() {
   return (
     <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21] min-h-screen">
-      
-
       <header className="bg-white border-b border-[#e5e0d8] px-8 py-6 flex items-center justify-between">
         <Link href="/" className="flex flex-col">
           <span className="font-serif text-2xl leading-none tracking-wide text-[#241f21]">VALENTINE</span>
@@ -15,13 +13,9 @@ export default function AboutPage() {
           <ArrowLeft className="w-4 h-4" /> Back to Home
         </Link>
       </header>
-
       <main className="max-w-[1200px] mx-auto px-6 py-20">
-        
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
-          
           <div className="lg:col-span-2">
-            
             <div className="flex flex-col md:flex-row gap-8 mb-12">
               <div className="w-full md:w-2/5 shrink-0">
                 <img 
@@ -68,7 +62,6 @@ export default function AboutPage() {
           </div>
 
           <div className="space-y-8">
-            
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Practice at a Glance</h3>
               <div className="space-y-4 text-sm">
@@ -89,8 +82,6 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-
-            {/* Finances Card */}
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Finances & Insurance</h3>
               <div className="mb-6">
@@ -98,7 +89,6 @@ export default function AboutPage() {
                 <p className="text-xs tracking-wider uppercase text-gray-500 font-bold">Per Individual Session</p>
                 <p className="text-sm mt-3 text-gray-600"><strong>Payment Methods:</strong> Cash, Check, Mastercard, Visa</p>
               </div>
-              
               <p className="font-bold text-sm mb-3 text-gray-900">Accepted Insurance Plans:</p>
               <ul className="text-sm text-gray-600 space-y-1.5 list-disc pl-4 mb-5">
                 <li>Aetna</li>
@@ -107,8 +97,11 @@ export default function AboutPage() {
                 <li>First Health</li>
                 <li>GEHA</li>
                 <li>Humana</li>
+                <li>MHNet Behavioral Health</li>
+                <li>Optum</li>
+                <li>SelectHealth</li>
+                <li>United Medical Resources (UMR)</li>
               </ul>
-              
               <Link 
                 href="/insurance" 
                 className="inline-flex items-center gap-2 text-[#ad8330] font-bold text-[0.9rem] hover:text-[#8e6b27] transition-colors group"
@@ -117,7 +110,6 @@ export default function AboutPage() {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </div>
-
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-4 font-serif border-b border-[#e5e0d8] pb-4 text-[#241f21]">Client Focus</h3>
               <ul className="text-sm space-y-2 text-gray-700">
@@ -128,11 +120,9 @@ export default function AboutPage() {
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </main>
-
     </div>
   );
 }

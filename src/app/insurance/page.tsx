@@ -51,8 +51,6 @@ export default function InsurancePage() {
             </div>
           ))}
         </div>
-
-       {/* Out of Network / Contact Callout */}
         <div className="mt-16 bg-white border border-[#e5e0d8] rounded-2xl p-8 md:p-12 text-center shadow-[0_4px_20px_rgb(0,0,0,0.03)]">
           <h2 className="font-serif text-3xl mb-4 text-[#241f21]">Don't see your provider?</h2>
           <p className="text-gray-600 mb-8 max-w-xl mx-auto leading-relaxed">
@@ -73,7 +71,6 @@ export default function InsurancePage() {
             </a>
           </div>
         </div>
-
       </main>
     </div>
   );
