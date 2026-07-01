@@ -68,22 +68,22 @@ export default function InsurancePage() {
           ))}
         </div>
 
-        {/* Out of Network / Contact Callout */}
-        <div className="mt-16 bg-[#365010] rounded-2xl p-8 md:p-12 text-white text-center shadow-lg">
-          <h2 className="font-serif text-3xl mb-4">Don't see your provider?</h2>
-          <p className="text-white/90 mb-8 max-w-xl mx-auto">
-            Insurance coverage can be confusing. If you don't see your specific plan listed, or if you have questions about your benefits and out-of-network options, please reach out. We are happy to help you verify your coverage.
+       {/* Out of Network / Contact Callout */}
+        <div className="mt-16 bg-white border border-[#e5e0d8] rounded-2xl p-8 md:p-12 text-center shadow-[0_4px_20px_rgb(0,0,0,0.03)]">
+          <h2 className="font-serif text-3xl mb-4 text-[#241f21]">Don't see your provider?</h2>
+          <p className="text-gray-600 mb-8 max-w-xl mx-auto leading-relaxed">
+            Insurance coverage can be confusing. If you don't see your specific plan listed, or if you have questions about your benefits and out-of-network options, please reach out. I am happy to help you verify your coverage.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <a 
               href="tel:4356190326" 
-              className="flex items-center gap-2 bg-white text-[#365010] px-8 py-3.5 rounded-full text-[0.9rem] font-bold tracking-wide hover:bg-[#e5e0d8] transition-all"
+              className="flex items-center gap-2 bg-[#ad8330] text-white px-8 py-3.5 rounded-full text-[0.9rem] font-bold tracking-wide hover:bg-[#8e6b27] shadow-sm transition-all"
             >
               <Phone className="w-4 h-4" /> (435) 619-0326
             </a>
             <a 
               href="mailto:jillevalentine@gmail.com" 
-              className="flex items-center gap-2 border-[1.5px] border-white text-white px-8 py-3.5 rounded-full text-[0.9rem] font-bold tracking-wide hover:bg-white hover:text-[#365010] transition-all"
+              className="flex items-center gap-2 border-[1.5px] border-[#ad8330] text-[#ad8330] px-8 py-3.5 rounded-full text-[0.9rem] font-bold tracking-wide hover:bg-[#ad8330] hover:text-white transition-all"
             >
               Email Us
             </a>

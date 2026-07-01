@@ -1,96 +1,22 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, CheckCircle2, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Mail, CheckCircle2, ArrowRight, ArrowLeft } from "lucide-react";
 
-export default function HomePage() {
+export default function AboutPage() {
   return (
-    <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21]">
+    <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21] min-h-screen">
       
       {/* ============================================
-          ANNOUNCEMENT BAR & NAVIGATION
+          SIMPLE HEADER
           ============================================ */}
-      <div className="bg-[#241f21] text-white text-[13px] py-3 px-6 flex justify-center items-center gap-8 flex-wrap tracking-wider relative z-50">
-        <span>Free 15-minute consultation available.</span>
-        
-        {/* Contact Info */}
-        <div className="flex items-center gap-6">
-          <span className="flex items-center gap-2">
-            <Phone className="w-3.5 h-3.5 text-[#ad8330]" />
-            <a href="tel:4356190326" className="hover:text-[#ad8330] transition-colors font-bold">435.619.0326</a>
-          </span>
-          <span className="flex items-center gap-2">
-            <Mail className="w-4 h-4 text-[#ad8330]" />
-            <a href="mailto:jillevalentine@gmail.com" className="hover:text-[#ad8330] transition-colors font-bold">jillevalentine@gmail.com</a>
-          </span>
-        </div>
-
-        {/* Navigation Links (Moved Here) */}
-        <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
-          <Link href="/about" className="hover:text-[#ad8330] transition-colors">
-            About
-          </Link>
-          <Link href="/insurance" className="hover:text-[#ad8330] transition-colors">
-            Insurance
-          </Link>
-        </nav>
-      </div>
-
-      {/* ============================================
-          MAIN HERO SECTION
-          ============================================ */}
-      <section className="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center">
-        
-        {/* Background Image */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{ 
-            backgroundImage: "url('/images/bryce.jpg')", 
-            backgroundSize: "cover", 
-            backgroundPosition: "center" 
-          }}
-        >
-          <div className="absolute inset-0 bg-black/45"></div>
-        </div>
-
-        {/* HEADER */}
-        <header className="absolute top-0 left-0 w-full z-40 px-8 py-6 flex items-center justify-between text-white">
-          
-          {/* Empty div to keep the logo perfectly centered using flexbox */}
-          <div className="w-[200px] hidden md:block"></div>
-
-          <Link href="/" className="absolute left-1/2 -translate-x-1/2 text-center flex flex-col items-center">
-            <span className="font-serif text-[2.5rem] leading-none tracking-wide">VALENTINE</span>
-            <span className="font-sans text-[0.6rem] tracking-[0.25em] uppercase mt-1 opacity-90">Counseling</span>
-          </Link>
-
-          <Link 
-            href="mailto:jillevalentine@gmail.com" 
-            className="hidden md:inline-block bg-[#ad8330] hover:bg-[#8e6b27] transition-colors text-white px-7 py-3 rounded-full text-[0.8rem] font-bold tracking-wide"
-          >
-            Request an Appointment
-          </Link>
-        </header>
-
-        {/* HERO CONTENT */}
-        <div className="relative z-10 text-center text-white px-4 mt-12 max-w-4xl mx-auto">
-          <h1 className="font-serif text-[3.5rem] leading-[1.1] mb-6 font-medium text-white drop-shadow-2xl">
-            Clinical Social Work & Therapy <br />
-            in Washington County
-          </h1>
-          
-          <p className="font-sans text-[0.85rem] tracking-widest uppercase mb-10 max-w-2xl mx-auto leading-relaxed font-medium text-white/90 drop-shadow-md">
-            Assisting individuals in finding the tools they already possess to heal, create change, and find inner peace.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a 
-              href="tel:4356190326" 
-              className="border-[1.5px] border-white text-white px-8 py-3.5 rounded-full text-[0.85rem] font-bold tracking-wide hover:bg-white hover:text-[#241f21] transition-all"
-            >
-              Call for a Free Consultation
-            </a>
-          </div>
-        </div>
-      </section>
+      <header className="bg-white border-b border-[#e5e0d8] px-8 py-6 flex items-center justify-between">
+        <Link href="/" className="flex flex-col">
+          <span className="font-serif text-2xl leading-none tracking-wide text-[#241f21]">VALENTINE</span>
+          <span className="font-sans text-[0.55rem] tracking-[0.25em] uppercase mt-1 text-gray-500">Counseling</span>
+        </Link>
+        <Link href="/" className="flex items-center gap-2 text-sm font-bold text-[#ad8330] hover:text-[#8e6b27] transition-colors">
+          <ArrowLeft className="w-4 h-4" /> Back to Home
+        </Link>
+      </header>
 
       {/* ============================================
           CONTENT SECTION: ABOUT & INFO
@@ -102,7 +28,7 @@ export default function HomePage() {
           {/* Left Column: Bio */}
           <div className="lg:col-span-2">
             
-            {/* NEW BIO LAYOUT WITH HEADSHOT */}
+            {/* BIO LAYOUT WITH HEADSHOT */}
             <div className="flex flex-col md:flex-row gap-8 mb-12">
               {/* Headshot Image */}
               <div className="w-full md:w-2/5 shrink-0">
@@ -115,7 +41,7 @@ export default function HomePage() {
               
               {/* Bio Text */}
               <div className="w-full md:w-3/5">
-                <h2 className="text-4xl mb-2 text-[#241f21]">Jill Valentine, LCSW</h2>
+                <h1 className="text-4xl mb-2 text-[#241f21] font-serif">Jill Valentine, LCSW</h1>
                 <p className="text-[#ad8330] font-bold tracking-wide text-sm uppercase mb-6">Verified by Psychology Today • 26 Years in Practice</p>
                 
                 <div className="space-y-4 text-lg leading-relaxed text-gray-700">
@@ -134,7 +60,7 @@ export default function HomePage() {
             
             {/* Specialties */}
             <div className="mt-12">
-              <h3 className="text-2xl mb-6 border-b border-[#e5e0d8] pb-4">Top Specialties</h3>
+              <h3 className="text-2xl mb-6 border-b border-[#e5e0d8] pb-4 font-serif">Top Specialties</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="flex items-center gap-3"><CheckCircle2 className="text-[#365010] w-5 h-5" /> <span>Depression</span></div>
                 <div className="flex items-center gap-3"><CheckCircle2 className="text-[#365010] w-5 h-5" /> <span>Trauma and PTSD</span></div>
@@ -197,10 +123,6 @@ export default function HomePage() {
                 <li>First Health</li>
                 <li>GEHA</li>
                 <li>Humana</li>
-                <li>MHNet Behavioral Health</li>
-                <li>Optum</li>
-                <li>SelectHealth</li>
-                <li>United Medical Resources (UMR)</li>
               </ul>
               
               <Link 
@@ -212,8 +134,7 @@ export default function HomePage() {
               </Link>
             </div>
 
-
-            
+            {/* Qualifications Card (Styled white like Practice at a Glance) */}
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-4 font-serif border-b border-[#e5e0d8] pb-4 text-[#241f21]">Client Focus</h3>
               <ul className="text-sm space-y-2 text-gray-700">
