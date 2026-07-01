@@ -2,8 +2,6 @@ import Link from "next/link";
 import { CheckCircle2, ArrowLeft, Phone } from "lucide-react";
 
 export default function InsurancePage() {
-  // Array updated to match your exact .svg file names
-  // I commented out ComPsych and MHNet for now since they are missing from your folder!
   const acceptedInsurances = [
     { name: "Aetna", logo: "/images/insurance/aetna.svg" },
     { name: "BlueCross and BlueShield", logo: "/images/insurance/bluecross.svg" },
@@ -19,10 +17,6 @@ export default function InsurancePage() {
 
   return (
     <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21] min-h-screen">
-      
-      {/* ============================================
-          SIMPLE HEADER
-          ============================================ */}
       <header className="bg-white border-b border-[#e5e0d8] px-8 py-6 flex items-center justify-between">
         <Link href="/" className="flex flex-col">
           <span className="font-serif text-2xl leading-none tracking-wide text-[#241f21]">VALENTINE</span>
@@ -33,27 +27,19 @@ export default function InsurancePage() {
         </Link>
       </header>
 
-      {/* ============================================
-          PAGE CONTENT
-          ============================================ */}
       <main className="max-w-[1000px] mx-auto px-6 py-16">
-        
-        {/* Page Title */}
         <div className="text-center mb-16">
           <h1 className="font-serif text-4xl md:text-5xl text-[#241f21] mb-4">Accepted Insurance</h1>
           <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
             We believe therapy should be accessible. Valentine Counseling is proud to be in-network with a variety of major insurance providers. 
           </p>
         </div>
-
-        {/* Insurance Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {acceptedInsurances.map((insurance, index) => (
             <div 
               key={index} 
               className="bg-white border border-[#e5e0d8] rounded-xl p-6 flex flex-col items-center justify-center text-center shadow-[0_4px_15px_rgb(0,0,0,0.02)] hover:shadow-[0_4px_20px_rgb(0,0,0,0.06)] transition-shadow duration-300 min-h-[160px]"
             >
-              {/* Logo Area */}
               <div className="h-16 w-full flex items-center justify-center mb-4">
                 <img 
                   src={insurance.logo} 
@@ -61,8 +47,6 @@ export default function InsurancePage() {
                   className="max-h-full max-w-full object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-300"
                 />
               </div>
-              
-              {/* Text Name (Always visible to ensure clarity) */}
               <h3 className="text-sm font-bold text-gray-800">{insurance.name}</h3>
             </div>
           ))}

@@ -4,14 +4,8 @@ import { MapPin, Phone, Mail, CheckCircle2, ArrowRight } from "lucide-react";
 export default function HomePage() {
   return (
     <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21]">
-      
-      {/* ============================================
-          ANNOUNCEMENT BAR & NAVIGATION
-          ============================================ */}
       <div className="bg-[#241f21] text-white text-[13px] py-3 px-6 flex justify-center items-center gap-8 flex-wrap tracking-wider relative z-50">
         <span>Free 15-minute consultation available.</span>
-        
-        {/* Contact Info */}
         <div className="flex items-center gap-6">
           <span className="flex items-center gap-2">
             <Phone className="w-3.5 h-3.5 text-[#ad8330]" />
@@ -23,7 +17,7 @@ export default function HomePage() {
           </span>
         </div>
 
-        {/* Navigation Links (Moved Here) */}
+
         <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
           <Link href="/about" className="hover:text-[#ad8330] transition-colors">
             About
@@ -34,12 +28,9 @@ export default function HomePage() {
         </nav>
       </div>
 
-      {/* ============================================
-          MAIN HERO SECTION
-          ============================================ */}
       <section className="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center">
         
-        {/* Background Image */}
+
         <div 
           className="absolute inset-0 z-0"
           style={{ 
@@ -51,7 +42,7 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-black/45"></div>
         </div>
 
-        {/* HEADER */}
+
         <header className="absolute top-0 left-0 w-full z-40 px-8 py-6 flex items-center justify-between text-white">
           
           {/* Empty div to keep the logo perfectly centered using flexbox */}
@@ -70,7 +61,7 @@ export default function HomePage() {
           </Link>
         </header>
 
-        {/* HERO CONTENT */}
+
         <div className="relative z-10 text-center text-white px-4 mt-12 max-w-4xl mx-auto">
           <h1 className="font-serif text-[3.5rem] leading-[1.1] mb-6 font-medium text-white drop-shadow-2xl">
             Clinical Social Work & Therapy <br />
@@ -92,19 +83,13 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ============================================
-          CONTENT SECTION: ABOUT & INFO
-          ============================================ */}
       <main className="max-w-[1200px] mx-auto px-6 py-20">
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           
           {/* Left Column: Bio */}
           <div className="lg:col-span-2">
-            
-            {/* NEW BIO LAYOUT WITH HEADSHOT */}
             <div className="flex flex-col md:flex-row gap-8 mb-12">
-              {/* Headshot Image */}
               <div className="w-full md:w-2/5 shrink-0">
                 <img 
                   src="/images/headshot.jpg" 
@@ -112,8 +97,6 @@ export default function HomePage() {
                   className="w-full h-auto rounded-2xl shadow-md object-cover"
                 />
               </div>
-              
-              {/* Bio Text */}
               <div className="w-full md:w-3/5">
                 <h2 className="text-4xl mb-2 text-[#241f21]">Jill Valentine, LCSW</h2>
                 <p className="text-[#ad8330] font-bold tracking-wide text-sm uppercase mb-6">Verified by Psychology Today • 26 Years in Practice</p>
@@ -132,7 +115,7 @@ export default function HomePage() {
               </div>
             </div>
             
-            {/* Specialties */}
+
             <div className="mt-12">
               <h3 className="text-2xl mb-6 border-b border-[#e5e0d8] pb-4">Top Specialties</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -142,7 +125,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Expertise */}
             <div className="mt-10">
               <h3 className="text-xl mb-4 font-serif">Areas of Expertise</h3>
               <div className="flex flex-wrap gap-2">
@@ -155,7 +137,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Right Column: Sidebar Info Cards */}
+
           <div className="space-y-8">
             
             {/* Location Card */}
@@ -180,7 +162,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Finances Card */}
+
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Finances & Insurance</h3>
               <div className="mb-6">

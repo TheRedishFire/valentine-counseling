@@ -5,9 +5,7 @@ export default function AboutPage() {
   return (
     <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21] min-h-screen">
       
-      {/* ============================================
-          SIMPLE HEADER
-          ============================================ */}
+
       <header className="bg-white border-b border-[#e5e0d8] px-8 py-6 flex items-center justify-between">
         <Link href="/" className="flex flex-col">
           <span className="font-serif text-2xl leading-none tracking-wide text-[#241f21]">VALENTINE</span>
@@ -18,19 +16,13 @@ export default function AboutPage() {
         </Link>
       </header>
 
-      {/* ============================================
-          CONTENT SECTION: ABOUT & INFO
-          ============================================ */}
       <main className="max-w-[1200px] mx-auto px-6 py-20">
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           
-          {/* Left Column: Bio */}
           <div className="lg:col-span-2">
             
-            {/* BIO LAYOUT WITH HEADSHOT */}
             <div className="flex flex-col md:flex-row gap-8 mb-12">
-              {/* Headshot Image */}
               <div className="w-full md:w-2/5 shrink-0">
                 <img 
                   src="/images/headshot.jpg" 
@@ -38,12 +30,9 @@ export default function AboutPage() {
                   className="w-full h-auto rounded-2xl shadow-md object-cover"
                 />
               </div>
-              
-              {/* Bio Text */}
               <div className="w-full md:w-3/5">
                 <h1 className="text-4xl mb-2 text-[#241f21] font-serif">Jill Valentine, LCSW</h1>
                 <p className="text-[#ad8330] font-bold tracking-wide text-sm uppercase mb-6">Verified by Psychology Today • 26 Years in Practice</p>
-                
                 <div className="space-y-4 text-lg leading-relaxed text-gray-700">
                   <p>
                     I truly believe that every individual has the innate ability to heal and to find inner peace. My job is to assist in helping individuals find the tools they already possess, and to provide support for this process. I'm open to providing significant direction or gentle nudgings, depending on what you're ready for. 
@@ -58,7 +47,6 @@ export default function AboutPage() {
               </div>
             </div>
             
-            {/* Specialties */}
             <div className="mt-12">
               <h3 className="text-2xl mb-6 border-b border-[#e5e0d8] pb-4 font-serif">Top Specialties</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -67,8 +55,6 @@ export default function AboutPage() {
                 <div className="flex items-center gap-3"><CheckCircle2 className="text-[#365010] w-5 h-5" /> <span>Relationship Issues</span></div>
               </div>
             </div>
-
-            {/* Expertise */}
             <div className="mt-10">
               <h3 className="text-xl mb-4 font-serif">Areas of Expertise</h3>
               <div className="flex flex-wrap gap-2">
@@ -81,10 +67,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Right Column: Sidebar Info Cards */}
           <div className="space-y-8">
             
-            {/* Location Card */}
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-6 font-serif border-b border-[#e5e0d8] pb-4">Practice at a Glance</h3>
               <div className="space-y-4 text-sm">
@@ -134,7 +118,6 @@ export default function AboutPage() {
               </Link>
             </div>
 
-            {/* Qualifications Card (Styled white like Practice at a Glance) */}
             <div className="bg-white p-8 rounded-xl shadow-[0_4px_20px_rgb(0,0,0,0.03)] border border-[#e5e0d8]">
               <h3 className="text-xl mb-4 font-serif border-b border-[#e5e0d8] pb-4 text-[#241f21]">Client Focus</h3>
               <ul className="text-sm space-y-2 text-gray-700">
