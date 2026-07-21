@@ -18,14 +18,15 @@ export default function HomePage() {
           </span>
         </div>
 
-        <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
-          <Link href="/about" className="hover:text-[#ad8330] transition-colors">
-            About
-          </Link>
-          <Link href="/insurance" className="hover:text-[#ad8330] transition-colors">
-            Insurance
-          </Link>
-        </nav>
+    <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
+        <Link href="/" className="hover:text-[#ad8330] transition-colors">Home</Link>
+        <Link href="/about" className="hover:text-[#ad8330] transition-colors">About</Link>
+        <Link href="/services" className="hover:text-[#ad8330] transition-colors">Services</Link>
+        <Link href="/specialties" className="hover:text-[#ad8330] transition-colors">Specialties</Link>
+        <Link href="/insurance" className="hover:text-[#ad8330] transition-colors">Insurance</Link>
+        <Link href="/faq" className="hover:text-[#ad8330] transition-colors">FAQ</Link>
+        <Link href="/contact" className="hover:text-[#ad8330] transition-colors">Contact</Link>
+    </nav>
       </div>
 
       <section className="relative w-full h-[85vh] min-h-[600px] flex items-center justify-center">

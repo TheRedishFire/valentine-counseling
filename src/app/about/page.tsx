@@ -1,18 +1,39 @@
 import Link from "next/link";
-import { MapPin, Phone, Mail, CheckCircle2, ArrowRight, ArrowLeft } from "lucide-react";
+import { MapPin, Phone, Mail, CheckCircle2, ArrowRight } from "lucide-react";
 
 export default function AboutPage() {
   return (
     <div className="font-sans antialiased bg-[#f9f8f6] text-[#241f21] min-h-screen">
-      <header className="bg-white border-b border-[#e5e0d8] px-8 py-6 flex items-center justify-between">
-        <Link href="/" className="flex flex-col">
-          <span className="font-serif text-2xl leading-none tracking-wide text-[#241f21]">VALENTINE</span>
-          <span className="font-sans text-[0.55rem] tracking-[0.25em] uppercase mt-1 text-gray-500">Counseling</span>
-        </Link>
-        <Link href="/" className="flex items-center gap-2 text-sm font-bold text-[#ad8330] hover:text-[#8e6b27] transition-colors">
-          <ArrowLeft className="w-4 h-4" /> Back to Home
+      <div className="bg-[#241f21] text-white text-[13px] py-3 px-6 flex justify-center items-center gap-8 flex-wrap tracking-wider sticky top-0 z-50 shadow-md">
+        <span>Free 15-minute consultation available.</span>
+        <div className="flex items-center gap-6">
+          <span className="flex items-center gap-2">
+            <Phone className="w-3.5 h-3.5 text-[#ad8330]" />
+            <a href="tel:4356190326" className="hover:text-[#ad8330] transition-colors font-bold">435.619.0326</a>
+          </span>
+          <span className="flex items-center gap-2">
+            <Mail className="w-4 h-4 text-[#ad8330]" />
+            <a href="mailto:jillevalentine@gmail.com" className="hover:text-[#ad8330] transition-colors font-bold">jillevalentine@gmail.com</a>
+          </span>
+        </div>
+        <nav className="flex items-center gap-6 font-bold uppercase text-[12px] border-l border-white/20 pl-8 ml-2">
+          <Link href="/" className="hover:text-[#ad8330] transition-colors">Home</Link>
+          <Link href="/about" className="text-[#ad8330] hover:text-[#ad8330] transition-colors">About</Link>
+          <Link href="/services" className="hover:text-[#ad8330] transition-colors">Services</Link>
+          <Link href="/specialties" className="hover:text-[#ad8330] transition-colors">Specialties</Link>
+          <Link href="/insurance" className="hover:text-[#ad8330] transition-colors">Insurance</Link>
+          <Link href="/faq" className="hover:text-[#ad8330] transition-colors">FAQ</Link>
+          <Link href="/contact" className="hover:text-[#ad8330] transition-colors">Contact</Link>
+        </nav>
+      </div>
+
+      <header className="bg-[#241f21] w-full px-8 py-8 flex items-center justify-center text-white border-t border-white/10 shadow-sm">
+        <Link href="/" className="text-center flex flex-col items-center">
+          <span className="font-serif text-[2.5rem] leading-none tracking-wide">VALENTINE</span>
+          <span className="font-sans text-[0.6rem] tracking-[0.25em] uppercase mt-1 opacity-90">Counseling</span>
         </Link>
       </header>
+      
       <main className="max-w-[1200px] mx-auto px-6 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
           <div className="lg:col-span-2">
